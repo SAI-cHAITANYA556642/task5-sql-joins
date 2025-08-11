@@ -1,6 +1,6 @@
 # Task 5 - SQL Joins
 
-/* This task shows how to use different SQL join operations, including "INNER JOIN","LEFT JOIN", "RIGHT JOIN", and "FULL JOIN".<br>
+ This task shows how to use different SQL join operations, including "INNER JOIN","LEFT JOIN", "RIGHT JOIN", and "FULL JOIN".<br>
  We will use two related tables:""Customers"" and ""Orders"".<br>
  
 ## Overview
@@ -13,22 +13,22 @@ We create two tables that have a one-to-many relationship:<br>
 ##Version Control System
 git
 
-/* then run join queries to see how different joins return results.<br> */
+ then run join queries to see how different joins return results.<br> 
 
-## Table Structures
-/* sql
-CREATE TABLE Customers (
-    CustomerID INT PRIMARY KEY,
-    Name VARCHAR(50),
-    City VARCHAR(50)
-);
+## Table Structures<br>
+sql<br>
+CREATE TABLE Customers ( <br>
+    CustomerID INT PRIMARY KEY,<br>
+    Name VARCHAR(50),<br>
+    City VARCHAR(50)<br>
+);<br>
 
-CREATE TABLE Orders (
-    OrderID INT PRIMARY KEY,
-    CustomerID INT,
-    Product VARCHAR(50),
-    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
-); */
+CREATE TABLE Orders ( <br>
+    OrderID INT PRIMARY KEY,<br>
+    CustomerID INT,<br>
+    Product VARCHAR(50),<br>
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID) <br>
+);<br>
 
 ## Key Concepts: Joins, Relationships
 
